@@ -2,7 +2,7 @@
 	position: absolute;
   	top: 5%;
   	left: 2rem;
-	font-family: comfortaa;
+	font-family: var(--Comfortaa);
 	font-weight: bold;
 	font-size: 24px;
 	background: -webkit-linear-gradient(303deg,var(--blue), var(--primeryGreen));
@@ -13,7 +13,7 @@
 
 .buddii_logo {
 	
-	font-family: comfortaa;
+	font-family: var(--Comfortaa);
 	font-weight: bold;
 	font-size: 24px;
 	background: -webkit-linear-gradient(303deg,var(--blue), var(--primeryGreen));

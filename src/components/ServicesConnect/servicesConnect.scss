@@ -2,20 +2,32 @@
     background-color: var(--black);
 }
 
+.service_box {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 .service_title {
-    font-size: 24px;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 660px;
 }
 
 .service_grid {
     display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .grid_item {
     background-color: var(--white);
-    width: 300px;
     height: 300px;
     border-radius: 10px;
     padding: 30px;
@@ -30,11 +42,16 @@
 }
 
 .service_item_title {
-    font-size: 18px;
+    font-size: 24px;
+    font-family: var(--Inter);
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    color: var(--black);
 }
 
 .service_item_text {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: var(--Inter);
+    line-height: 26px;
+    color: var(--black);
 }
