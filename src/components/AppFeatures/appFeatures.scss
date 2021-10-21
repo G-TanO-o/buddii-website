@@ -1,0 +1,117 @@
+.appFeature {
+    margin: auto;
+    margin-top: 60px;
+
+    @media only screen and (min-width: 375px) {
+		flex-direction: row;
+
+	}
+}
+
+.appFeature_box {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    
+    max-width: 1200px;
+
+    @media only screen and (min-width: 1024px) {
+		flex-direction: row;
+
+	}
+
+    .boxtext {
+
+        @media only screen and (min-width: 768px) {
+                padding: 0px 30px;
+        
+        }
+        
+        .title {
+            font-size: 48px;
+            text-transform: capitalize;
+            font-weight: bold;
+            margin-bottom: 60px;
+
+            
+        }
+        
+        .items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media only screen and (min-width: 768px) {
+                align-items: flex-start;
+        
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+
+            @media only screen and (min-width: 1024px) {
+                margin-bottom: 60px;
+        
+            }
+
+            .img_box {
+                background-color: var(--lightGrey);
+                width: 50px;
+                height: 50px;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+
+                @media only screen and (min-width: 768px) {
+                    width: 60px;
+                    height: 60px;
+            
+                }
+                .img {
+                    height: 20px;
+                    @media only screen and (min-width: 768px) {
+                        
+                        height: 25px;
+                
+                    }
+                }
+            }
+
+            .boxtext {
+                width: 70vw;
+                @media only screen and (min-width: 768px) {
+                    max-width: 400px;
+            
+            }
+                .item_title {
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    @media only screen and (min-width: 768px) {
+                        font-size: 24px;
+                        margin-bottom: 15px;
+                    }
+                    
+                }
+                .text {
+                    font-size: 14px;
+                    line-height: 150%;
+
+                    @media only screen and (min-width: 768px) {
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .img_dashbord {
+        width: 95vw;
+        max-width: 1000px;
+    }
+}

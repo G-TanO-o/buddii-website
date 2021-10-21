@@ -1,0 +1,94 @@
+.cta_app {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    background-color: var(--blue);
+}
+
+.cta_app_box {
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    margin: auto;
+
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        height: 500px;
+	}
+
+    .img_box {
+        width: 100vw;
+        overflow: hidden;
+        margin-top: -60px;
+    }
+}
+
+.app_box {
+    padding: 60px 60px;
+
+    @media only screen and (min-width: 1024px) {
+        padding: 60px 30px;
+	}
+    .title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        max-width: 600px;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 150%;
+        max-width: 600px;
+    }
+}
+
+.download_buttons {
+    margin-top: 30px;
+
+    p{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .appstore {
+        margin-right: 15px;
+    }
+}
+
+.img_box {
+    @media only screen and (min-width: 1024px) {
+        max-width: 600px;
+
+	}
+    display: flex;
+    justify-content: center;
+}
+
+.phones {
+    width: 100vw;
+    transform: rotate(-70deg);
+    
+
+    @media only screen and (min-width: 768px) {
+        width: 70vw;
+       
+	}
+
+    @media only screen and (min-width: 1024px) {
+        width: 50vw;
+        max-width: 600px;
+        transform: rotate(0deg);
+
+	}
+
+    @media only screen and (min-width: 1440px) {
+        width: 50vw;
+        max-width: 600px;
+        transform: rotate(0deg);
+
+	}
+}

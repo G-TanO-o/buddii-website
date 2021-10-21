@@ -1,0 +1,110 @@
+.benefitsWorking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .benefitsWorking_box {
+        padding: 30px 15px;
+        max-width: 1200px;
+    
+        @media only screen and (min-width: 1024px) {
+            padding: 30px .1px;
+    
+        }
+    }
+    
+    .title {
+        font-size: 24px;
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-bottom: 60px;
+        @media only screen and (min-width: 375px) {
+           
+    
+        }
+        @media only screen and (min-width: 768px) {
+            font-size: 48px;
+    
+        }
+        
+    }
+    
+    .benefits_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    
+        @media only screen and (min-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
+    
+        }
+    
+    }
+    
+    .item {
+        display: flex;
+        flex-direction: row;
+    
+        @media only screen and (min-width: 1024px) {
+            margin-bottom: 60px;
+    
+        }
+    
+        .img_box {
+            background-color: var(--lightGrey);
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+    
+            @media only screen and (min-width: 768px) {
+                width: 60px;
+                height: 60px;
+        
+            }
+            .img {
+                height: 20px;
+                @media only screen and (min-width: 768px) {
+                    
+                    height: 25px;
+            
+                }
+            }
+        }
+    
+        .boxtext {
+            width: 70vw;
+            @media only screen and (min-width: 768px) {
+                max-width: 400px;
+        
+            }
+
+            // @media only screen and (min-width: 1440px) {
+            //     max-width: 520px;
+        
+            // }
+            .item_title {
+                font-size: 18px;
+                text-transform: capitalize;
+                font-weight: bold;
+                @media only screen and (min-width: 768px) {
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
+                
+            }
+            .text {
+                font-size: 14px;
+                line-height: 150%;
+    
+                @media only screen and (min-width: 768px) {
+                    font-size: 18px;
+                    
+                }
+            }
+        }
+    }
+}

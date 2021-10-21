@@ -1,0 +1,39 @@
+.footer {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 30px 15px;
+}
+
+.placement_footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer_logo {
+    font-family: comfortaa;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+.pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    margin-bottom: 30px;
+}
+
+.getApp {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.appstore {
+    margin-right: 15px;
+}
+
+.rights {
+    text-align: center;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,61 @@
+// @font-face {
+// 	font-family: "Qanelas";
+//   	src: url('src/assets/fonts/QanelasRegular.woff') format('woff');
+// 	font-weight: 400;
+// }
+// @font-face {
+// 	font-family: "Qanelas";
+//   	src: url('src/assets/fonts/QanelasRegular.woff2') format('woff2');
+// 	font-weight: 400;
+// }
+
+
+// @font-face {
+// 	font-family: "Qanelas";
+// 	src: url('src/assets/fonts/QanelasSemiBold.woff') format('woff');
+// 	font-weight: 500;
+// }
+// @font-face {
+// 	font-family: "Qanelas";
+//   	src: url('src/assets/fonts/QanelasSemiBold.woff2') format('woff2');
+// 	font-weight: 500;
+// }
+
+
+// @font-face {
+// 	font-family: "Qanelas";
+// 	src: url('src/assets/fonts/QanelasBold.woff') format('woff');
+// 	font-weight: 700;
+// }
+// @font-face {
+// 	font-family: "Qanelas";
+//   	src: url('src/assets/fonts/QanelasBold.woff2') format('woff2');
+// 	font-weight: 700;
+// }
+
+
+// @font-face {
+// 	font-family: "Qanelas";
+// 	src: url('src/assets/fonts/QanelasExtraBold.woff') format('woff');
+// 	font-weight: 900;
+// }
+// @font-face {
+// 	font-family: "Qanelas";
+//   	src: url('src/assets/fonts/QanelasExtraBold.woff2') format('woff2');
+// 	font-weight: 900;
+// }
+
+
+body {
+  margin: 0;
+  font-family: 'Qanelas' , 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

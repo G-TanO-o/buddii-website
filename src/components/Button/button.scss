@@ -1,0 +1,43 @@
+.button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 6px;
+	padding: 5px 20px;
+
+	font-size: 18px;
+	font-weight: 600;
+    width: fit-content;
+    height: 40px;
+    text-decoration: none;
+
+	.arrowRight {
+		margin-left: 20px;
+	}
+}
+
+.primery {
+	color: var(--white);
+	border: none;
+    background-color: var(--blue);
+	border: var(--blue) solid 3px;
+
+}
+
+.second {
+	color: var(--blue);
+	border: none;
+	padding: 5px 20px 5px 0px;
+
+}
+
+.second_black {
+	color: var(--black);
+	border: var(--black) solid 3px;
+	padding: 5px 20px 5px 20px;
+
+}
+
+.arrow_none {
+	display: none;
+}
