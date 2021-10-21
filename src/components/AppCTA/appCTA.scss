@@ -3,7 +3,7 @@
     flex-direction: column;
     align-content: center;
     width: 100vw;
-    background-color: var(--blue);
+    background-color: var(--darkblue);
 }
 
 .cta_app_box {
@@ -15,7 +15,7 @@
 
     @media only screen and (min-width: 1024px) {
         flex-direction: row;
-        height: 500px;
+        height: 430px;
 	}
 
     .img_box {
@@ -36,12 +36,14 @@
         font-weight: bold;
         margin-bottom: 30px;
         max-width: 600px;
+        color: var(--white);
     }
 
     .text {
         font-size: 18px;
         line-height: 150%;
         max-width: 600px;
+        color: var(--white);
     }
 }
 
@@ -74,20 +76,16 @@
     
 
     @media only screen and (min-width: 768px) {
-        width: 70vw;
-       
+        width: auto;
 	}
 
     @media only screen and (min-width: 1024px) {
-        width: 50vw;
-        max-width: 600px;
+
         transform: rotate(0deg);
 
 	}
 
     @media only screen and (min-width: 1440px) {
-        width: 50vw;
-        max-width: 600px;
         transform: rotate(0deg);
 
 	}

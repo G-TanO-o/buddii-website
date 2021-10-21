@@ -4,12 +4,11 @@
 	align-items: center;
 	border-radius: 6px;
 	padding: 5px 20px;
-
 	font-size: 18px;
 	font-weight: 600;
-    width: fit-content;
-    height: 40px;
-    text-decoration: none;
+	width: fit-content;
+	height: 40px;
+	text-decoration: none;
 
 	.arrowRight {
 		margin-left: 20px;
@@ -19,13 +18,13 @@
 .primery {
 	color: var(--white);
 	border: none;
-    background-color: var(--blue);
-	border: var(--blue) solid 3px;
-
+  background-color: var(--darkblue);
+	border: var(--darkblue) solid 2px;
+	font-weight: 500;
 }
 
 .second {
-	color: var(--blue);
+	color: var(--darkblue);
 	border: none;
 	padding: 5px 20px 5px 0px;
 }
@@ -34,14 +33,28 @@
 	color: var(--green);
 	border: none;
 	padding: 5px 20px 5px 0px;
-
 }
 
 .second_black {
 	color: var(--black);
-	border: var(--black) solid 3px;
+	border: var(--black) solid 2px;
 	padding: 5px 20px 5px 20px;
+	font-weight: 500;
+}
 
+.second_black_noborder {
+	color: var(--black);
+	border: none;
+	padding: 5px 20px 5px 0px;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.second_white {
+	color: var(--white);
+	border: var(--white) solid 2px;
+	padding: 5px 20px 5px 20px;
+	font-weight: 500;
 }
 
 .arrow_none {

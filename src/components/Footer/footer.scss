@@ -6,7 +6,15 @@
 
 .placement_footer {
     max-width: 1200px;
-    margin: auto;
+    margin: 55px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column-reverse;
+
+    @media only screen and (min-width: 768px) {
+        flex-flow: row;
+	}
+    
 }
 
 .footer_logo {
@@ -14,26 +22,67 @@
     font-weight: bold;
     font-size: 24px;
     color: var(--blue);
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    margin-top: 85px;
+
+    @media only screen and (min-width: 768px) {
+        margin-top: 0;
+	}
 }
 .pages {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 15px;
-    margin-bottom: 30px;
+    display: flex;
+    margin-bottom: 15px;
+    flex-flow: wrap;
+
+    .page-link {
+        margin-right: 24px;
+        font-family: var(--Inter);
+        font-weight: normal;
+        font-size: 16px;
+        color: var(--white);
+        text-transform: capitalize;
+        margin-top: 15px;
+
+        @media only screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
 }
 
 .getApp {
     margin-bottom: 15px;
-    font-weight: bold;
+    font-family: var(--Inter);
+    font-weight: 500;
+    font-size: 18px;
+    color: #D9DBE1;
 }
 
-.appstore {
-    margin-right: 15px;
+.footerDownload {
+    display: flex;
+    flex-flow: column;
+
+    .appstore {
+        margin-bottom: 15px;
+    }
 }
 
 .rights {
+    margin-top: 24px;
+    font-family: var(--Inter);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #D9DBE1;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 70px;
+
+    @media only screen and (min-width: 768px) {
+        margin-top: 0;
+        text-align: start;
+	}
 }
 
