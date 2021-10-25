@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from "react";
+import React, { useRef, useEffect, useState } from "react";
 // import Calender from "../../components/Dashboard/Calendar/index";
 import stripeLeft from "../../assets/images/strokes-links.svg"
 import stripeRechts from "../../assets/images/strokes-rechts.svg"
@@ -8,13 +8,15 @@ import arrowRight from "../../assets/images/right-arrow.svg"
 import airbnb from "../../assets/images/companies/Airbnb.svg"
 import google from "../../assets/images/companies/Google.svg"
 import hubspot from "../../assets/images/companies/Hubspot.svg"
-
+import Microsoft from "../../assets/images/companies/Microsoft.svg"
+import Walmart from "../../assets/images/companies/Walmart.svg"
+import FedEx from "../../assets/images/companies/FedEx.svg"
 
 import "./header.scss";
 import Button from "../Button";
 
 function Header() {
-  
+
 
   return (
     <>
@@ -31,7 +33,7 @@ function Header() {
             <p className="header_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit aliquam placerat sed turpis. Elit at non a egestas es thi gronas il ptonto.</p>
           </div>
           <div className="header_buttons">
-          <Button text="Get started" to="#" style="primery"/>
+            <Button text="Get started" to="#" style="primery" />
             <div className="button_arrowDown">
               <img src={arrowDown} className="arrowDown" alt="" />
             </div>
@@ -46,28 +48,28 @@ function Header() {
         </div>
         <div className="banner_companies">
           <div className="box_companie">
-            <img className="img_companie" src={airbnb} alt="" />
+            <img className="img_companie" src={airbnb} alt="airbnb logo" />
           </div>
           <div className="box_companie">
-            <img className="img_companie" src={hubspot} alt="" />
+            <img className="img_companie" src={hubspot} alt="hubspot logo" />
           </div>
           <div className="box_companie">
-            <img className="img_companie" src={google} alt="" />
+            <img className="img_companie" src={google} alt="google logo" />
           </div>
 
           <div className="box_companie">
-            <img className="img_companie" src={airbnb} alt="" />
+            <img className="img_companie" src={Microsoft} alt="Microsoft logo" />
           </div>
           <div className="box_companie">
-            <img className="img_companie" src={hubspot} alt="" />
+            <img className="img_companie" src={Walmart} alt="Walmart logo" />
           </div>
           <div className="box_companie">
-            <img className="img_companie" src={google} alt="" />
+            <img className="img_companie" src={FedEx} alt="FedEx logo" />
           </div>
         </div>
-        
+
       </section>
-   
+
     </>
   );
 }

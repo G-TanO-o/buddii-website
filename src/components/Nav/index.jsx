@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 // import Calender from "../../components/Dashboard/Calendar/index";
+import { NavLink } from "react-router-dom";
 import Burger from "../Burger";
 import Menu from "../Menu";
 import Button from "../Button";
@@ -40,22 +41,18 @@ function Nav({ open, setOpen }) {
                 <a className="nav_link" href="/">
                   <p className="buddii_logo">buddii</p>
                 </a>
-                <a className="nav_link" href="/">
+                <NavLink className="nav_link" to="/" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
                   <span role="img" aria-label="about us"></span>
                   About
-                </a>
-                <a className="nav_link" href="/features">
+                </NavLink>
+                <NavLink className="nav_link" to="/features" activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
                   <span role="img" aria-label="features"></span>
                   Features
-                </a>
-                <a className="nav_link" href="/">
+                </NavLink>
+                <NavLink className="nav_link" to="/pricing" activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
                   <span role="img" aria-label="contact"></span>
                   Pricing
-                </a>
-                <a className="nav_link" href="/">
-                  <span role="img" aria-label="contact"></span>
-                  Jobs
-                </a>
+                </NavLink>
               </ul>
               <div className="buttons_nav">
                 <Button text="Sign in" to="#" style="second_black" arrowColor="arrow_none" />

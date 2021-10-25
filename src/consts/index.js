@@ -1,9 +1,8 @@
 const ROUTES = {
     feed: "/",
     features: "/features",
+    pricing: "/pricing",
     nav: "/nav",
-    projects: "/projects",
-    projectDetail: { path : "/projectDetail/:id", to: "/projectDetail/"},
     about: "/about",
     menu: "/menu"
 }

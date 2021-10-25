@@ -8,6 +8,7 @@ import { ROUTES } from './consts';
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Features from './pages/Features';
+import Pricing from './pages/Pricing';
 
 function App() {
 
@@ -30,6 +31,10 @@ function App() {
 
         <Route path="/features">
           <Features/>
+        </Route>
+
+        <Route path="/pricing">
+          <Pricing/>
         </Route>
         </>
       ):(

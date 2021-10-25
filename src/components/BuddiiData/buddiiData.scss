@@ -33,13 +33,16 @@
 
 .buddiiData_text {
     font-size: 14px;
+    margin-bottom: 15px;
 
     @media only screen and (min-width: 768px) {
 		font-size: 18px;
+        margin-bottom: 25px;
 	}
 
     @media only screen and (min-width: 1024px) {
 		text-align: left;
+        margin-bottom: 0;
 	}
 }
 

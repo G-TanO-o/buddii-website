@@ -14,7 +14,7 @@ const Menu = ({ open, setOpen }) => {
         <span role="img" aria-label="price"></span>
         Features
       </a>
-      <a className="menu_link" href="/">
+      <a className="menu_link" href="/pricing">
         <span role="img" aria-label="contact"></span>
         Pricing
       </a>
