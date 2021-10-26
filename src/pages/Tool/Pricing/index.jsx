@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../../components/HeaderPricing"
-import Features from "../../../components/Features";
+import Header from "../../../components/Tool/HeaderPricing"
+import Features from "../../../components/Tool/Features";
 import "./Pricing.scss"
 import "./Slider.scss"
 

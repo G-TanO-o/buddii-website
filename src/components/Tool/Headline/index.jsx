@@ -1,7 +1,7 @@
 import React from "react";
 
-import PhoneMockup from "../../assets/images/headlineimg.png";
-import Button from "../Button";
+import PhoneMockup from "../../../assets/images/headlineimg.png";
+import Button from "../../Button";
 
 import "./headline.scss";
 

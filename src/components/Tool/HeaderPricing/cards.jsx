@@ -1,6 +1,6 @@
 import React from "react";
-import Checked from "../../assets/images/checked.svg"
-import NoChecked from "../../assets/images/nochecked.svg"
+import Checked from "../../../assets/images/checked.svg"
+import NoChecked from "../../../assets/images/nochecked.svg"
 import "./Cards.scss"
 
 function cards({ data, title, text, price }) {

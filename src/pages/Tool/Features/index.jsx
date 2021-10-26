@@ -1,9 +1,9 @@
 import React from "react";
 
 import AppFeatures from "../../../components/Tool/AppFeatures";
-import BenefitsWorking from "../../../components/BenefitsWorking";
-import ServicesConnect from "../../../components/ServicesConnect";
-import BuddiiToday from "../../../components/BuddiiToday";
+import BenefitsWorking from "../../../components/Tool/BenefitsWorking";
+import ServicesConnect from "../../../components/Tool/ServicesConnect";
+import BuddiiToday from "../../../components/Tool/BuddiiToday";
 
 import "./features.scss";
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import Burger from "../Burger";
 import Menu from "../Menu";
-import Button from "../Button";
+import Button from "../../Button";
 
 import "./nav.scss";
 

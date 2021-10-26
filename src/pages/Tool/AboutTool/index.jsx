@@ -1,11 +1,11 @@
 import React from "react";
 
-import Header from "../../../components/Header";
-import Powerpoint from "../../../components/Powerpoint";
-import BuddiiData from "../../../components/BuddiiData";
-import Headline from "../../../components/Headline";
+import Header from "../../../components/Tool/Header";
+import Powerpoint from "../../../components/Tool/Powerpoint";
+import BuddiiData from "../../../components/Tool/BuddiiData";
+import Headline from "../../../components/Tool/Headline";
 import AppFeatures from "../../../components/Tool/AppFeatures";
-import AppCTA from "../../../components/AppCTA";
+import AppCTA from "../../../components/Tool/AppCTA";
 
 
 import "./aboutTool.scss";

@@ -1,18 +1,18 @@
 import React from "react";
 
-import stripeLeft from "../../assets/images/strokes-links.svg"
-import stripeRechts from "../../assets/images/strokes-rechts.svg"
-import headerImage from "../../assets/images/header-img.png"
-import arrowDown from "../../assets/images/arrow-down.svg"
-import airbnb from "../../assets/images/companies/Airbnb.svg"
-import google from "../../assets/images/companies/Google.svg"
-import hubspot from "../../assets/images/companies/Hubspot.svg"
-import Microsoft from "../../assets/images/companies/Microsoft.svg"
-import Walmart from "../../assets/images/companies/Walmart.svg"
-import FedEx from "../../assets/images/companies/FedEx.svg"
+import stripeLeft from "../../../assets/images/strokes-links.svg"
+import stripeRechts from "../../../assets/images/strokes-rechts.svg"
+import headerImage from "../../../assets/images/header-img.png"
+import arrowDown from "../../../assets/images/arrow-down.svg"
+import airbnb from "../../../assets/images/companies/Airbnb.svg"
+import google from "../../../assets/images/companies/Google.svg"
+import hubspot from "../../../assets/images/companies/Hubspot.svg"
+import Microsoft from "../../../assets/images/companies/Microsoft.svg"
+import Walmart from "../../../assets/images/companies/Walmart.svg"
+import FedEx from "../../../assets/images/companies/FedEx.svg"
 
 import "./header.scss";
-import Button from "../Button";
+import Button from "../../Button";
 
 function Header() {
 

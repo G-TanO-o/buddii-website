@@ -6,7 +6,7 @@ import React, { useState} from "react";
 import Home from './pages/Home';
 
 //Default herbruikbaar
-import Nav from "./components/Nav";
+import Nav from "./components/Default/Nav";
 import Footer from "./components/Default/Footer";
 
 //Tool

@@ -1,6 +1,6 @@
 import React from "react";
-import Checked from "../../assets/images/checked.svg"
-import NoChecked from "../../assets/images/nochecked.svg"
+import Checked from "../../../assets/images/checked.svg"
+import NoChecked from "../../../assets/images/nochecked.svg"
 import "./Features.scss"
 
 function Features() {

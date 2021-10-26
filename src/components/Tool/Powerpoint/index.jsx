@@ -1,11 +1,11 @@
 import React from "react";
 
-import make from "../../assets/images/powerpoint/make.svg";
-import components from "../../assets/images/powerpoint/components.svg";
-import flexibility from "../../assets/images/powerpoint/flexibility.svg";
-import layout from "../../assets/images/powerpoint/layout.svg";
-import organised from "../../assets/images/powerpoint/organised.svg";
-import user from "../../assets/images/powerpoint/user.svg";
+import make from "../../../assets/images/powerpoint/make.svg";
+import components from "../../../assets/images/powerpoint/components.svg";
+import flexibility from "../../../assets/images/powerpoint/flexibility.svg";
+import layout from "../../../assets/images/powerpoint/layout.svg";
+import organised from "../../../assets/images/powerpoint/organised.svg";
+import user from "../../../assets/images/powerpoint/user.svg";
 
 import "./powerpoint.scss";
 

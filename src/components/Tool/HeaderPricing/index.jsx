@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import stripeLeft from "../../assets/images/strokes-links.svg"
-import stripeRechts from "../../assets/images/strokes-rechts.svg"
+import stripeLeft from "../../../assets/images/strokes-links.svg"
+import stripeRechts from "../../../assets/images/strokes-rechts.svg"
 import Card from "./cards";
 
 import "./HeaderPricing.scss";
