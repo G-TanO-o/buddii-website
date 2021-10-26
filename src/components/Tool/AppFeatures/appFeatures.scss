@@ -1,0 +1,170 @@
+.appFeature {
+    margin: auto;
+    margin-top: 60px;
+
+    @media only screen and (min-width: 375px) {
+		flex-direction: row;
+
+	}
+}
+
+.appFeature_box {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    
+    max-width: 1200px;
+
+    @media only screen and (min-width: 1024px) {
+		flex-direction: row;
+
+	}
+
+    .boxtext {
+        margin-bottom: 30px;
+
+        @media only screen and (min-width: 768px) {
+                padding: 0px 30px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            padding: 0px 30px;
+            margin-bottom: 0px;
+    }
+        
+        .title {
+            font-size: 48px;
+            text-transform: capitalize;
+            font-weight: bold;
+            margin-bottom: 60px;
+        }
+        
+        .items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+
+            @media only screen and (min-width: 768px) {
+                align-items: flex-start;
+        
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+
+            @media only screen and (min-width: 1024px) {
+                margin-bottom: 60px;
+        
+            }
+
+            .img_box {
+                background-color: var(--lightGrey);
+                width: 50px;
+                height: 50px;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+
+                @media only screen and (min-width: 768px) {
+                    width: 60px;
+                    height: 60px;
+            
+                }
+                .img {
+                    height: 20px;
+                    @media only screen and (min-width: 768px) {
+                        
+                        height: 25px;
+                
+                    }
+                }
+            }
+
+            .boxtext {
+                width: 70vw;
+                @media only screen and (min-width: 768px) {
+                    max-width: 400px;
+            
+            }
+                .item_title {
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    @media only screen and (min-width: 768px) {
+                        font-size: 24px;
+                        margin-bottom: 15px;
+                    }
+                    
+                }
+                .text {
+                    font-size: 14px;
+                    line-height: 150%;
+
+                    @media only screen and (min-width: 768px) {
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .img_dashbord {
+        width: 95vw;
+        max-width: 1000px;
+    }
+}
+
+.items_hover {
+    .item_title {
+        -webkit-text-stroke: 1px black;   
+        -webkit-text-fill-color: transparent;
+    }
+
+    .item_title_active {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: bold;
+        -webkit-text-stroke: 0px black;   
+        -webkit-text-fill-color: black;
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: -15px;
+            width: 0%;
+            height: 100%;
+            background: var(--primeryGreen);
+            opacity: .5;
+            animation: animate .4s ease-out;
+            z-index: 2;
+            animation-fill-mode: forwards;
+            padding: 5px;
+            mix-blend-mode: multiply;
+        }
+
+        @keyframes animate {
+            0% {
+                width: 0;
+            }
+  
+            100% {
+                width: calc(100% + 20px);
+            }
+        }
+    }    
+}
