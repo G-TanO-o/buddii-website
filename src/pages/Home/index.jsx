@@ -10,35 +10,35 @@ function Home() {
     <article className="home_container">
       <ul className="home_nav">
         <li className="home_nav_item">
-          <NavLink className="nav_link" to="/aboutTool" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
-            About
+          <NavLink className="nav_link nav_link-tool" to="/pricing" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+            Pricing
           </NavLink>
         </li>
         <li className="home_nav_item">
-          <NavLink className="nav_link" to="/features" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+          <NavLink className="nav_link nav_link-tool" to="/features" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
             Features
           </NavLink>
         </li>
         <li className="home_nav_item">
-          <NavLink className="nav_link" to="/pricing" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
-            Pricing
+          <NavLink className="nav_link nav_link-tool" to="/tool" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+            Tool
           </NavLink>
         </li>
         <li>
           <h1 className="home_nav_item_title">buddii</h1>
         </li>
         <li className="home_nav_item">
-          <NavLink className="nav_link" to="/aboutUs" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
-            About Us
+          <NavLink className="nav_link nav_link-studio" to="/studio" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+            Studio
           </NavLink>
         </li>
         <li className="home_nav_item">
-          <NavLink className="nav_link" to="/cases" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+          <NavLink className="nav_link nav_link-studio" to="/cases" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
             Cases
           </NavLink>
         </li>
         <li className="home_nav_item">
-          <NavLink className="nav_link" to="/solutions" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+          <NavLink className="nav_link nav_link-studio" to="/solutions" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
             Solutions
           </NavLink>
         </li>
@@ -52,14 +52,14 @@ function Home() {
           <div className={hover ? "toggle1 toggle_hoverclass" : "toggle1"}>
             <div>
               <p className="toggle_title">Tool</p>
-              <a href="/aboutTool">Buddii Tool</a>
+              <a href="/tool">Buddii Tool</a>
             </div>
           </div>
 
           <div className="toggle2" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
             <div>
               <p className="toggle_title">Studio</p>
-              <a href="/aboutUs">Buddii Studio</a>
+              <a href="/studio">Buddii Studio</a>
             </div>
           </div>
         </div>

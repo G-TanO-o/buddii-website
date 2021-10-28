@@ -23,6 +23,14 @@
 	font-weight: 500;
 }
 
+.primery-black {
+	color: var(--black);
+	border: none;
+  background-color: var(--darkblue);
+	border: var(--darkblue) solid 2px;
+	font-weight: 500;
+}
+
 .second {
 	color: var(--darkblue);
 	border: none;

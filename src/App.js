@@ -10,28 +10,34 @@ import Nav from "./components/Default/Nav";
 import Footer from "./components/Default/Footer";
 
 //Tool
-import AboutTool from './pages/Tool/AboutTool';
+import Tool from './pages/Tool/Tool';
 import Features from './pages/Tool/Features';
 import Pricing from './pages/Tool/Pricing';
 
 //Studio
-import AboutUs from './pages/Studio/AboutUs';
+import Studio from './pages/Studio/Studio';
 import Cases from './pages/Studio/Cases';
 import Solutions from './pages/Studio/Solutions';
+import Blog from "./pages/Studio/Blog";
+import Contact from './pages/Studio/Contact';
+import Offerte from './pages/Studio/Offerte';
+import Demo from './pages/Studio/Demo';
 
 function App() {
   const [open, setOpen] = useState(false);
 
   const navtools= [
-    {name: "About", to: "/aboutTool"},
+    {name: "Tool", to: "/tool"},
     {name: "Features", to: "/features"},
     {name: "Pricing", to: "/pricing"}
   ]
 
   const navstudio= [
-    {name: "About Us", to: "/aboutUs"},
+    {name: "Studio", to: "/studio"},
     {name: "Cases", to: "/cases"},
-    {name: "Solutions", to: "/solutions"}
+    {name: "Solutions", to: "/solutions"},
+    {name: "Blog", to: "/blog"},
+    {name: "Contact", to: "/contact"},
   ]
 
   return (
@@ -41,9 +47,9 @@ function App() {
           <Home/>
         </Route>
         <>
-          <Route path="/aboutTool" >
+          <Route path="/tool" >
             <Nav open={open} setOpen={e => setOpen(e)} links={navtools}/>
-            <AboutTool/>
+            <Tool/>
             <Footer />
           </Route>
 
@@ -59,9 +65,9 @@ function App() {
             <Footer />
           </Route>
 
-          <Route path="/aboutUs" >
+          <Route path="/studio" >
             <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
-            <AboutUs/>
+            <Studio/>
             <Footer />
           </Route>
 
@@ -74,6 +80,30 @@ function App() {
           <Route path="/solutions">
             <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
             <Solutions/>
+            <Footer />
+          </Route>
+
+          <Route path="/blog">
+            <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
+            <Blog/>
+            <Footer />
+          </Route>
+
+          <Route path="/contact">
+            <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
+            <Contact/>
+            <Footer />
+          </Route>
+
+          <Route path="/offerte">
+            <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
+            <Offerte/>
+            <Footer />
+          </Route>
+
+          <Route path="/demo">
+            <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
+            <Demo/>
             <Footer />
           </Route>
         </>

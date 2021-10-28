@@ -3,7 +3,7 @@ import React from "react";
 function Solutions() {
 
   return (
-    <article className="home_container">
+    <article>
       <p>Solutions</p>
     </article>
   );

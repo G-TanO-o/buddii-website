@@ -3,7 +3,7 @@ import React from "react";
 function Cases() {
 
   return (
-    <article className="home_container">
+    <article>
       <p>Cases</p>
     </article>
   );

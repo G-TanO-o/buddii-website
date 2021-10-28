@@ -1,6 +1,7 @@
 .home_container {
   background: #F6F9FF;
-  height: 100vh;  
+  min-height: 100vh;
+  max-height: 100%;
 
   .home_nav {
     max-width: 1200px;
@@ -25,6 +26,14 @@
         color: black;
         text-decoration: none;
       }
+
+      .nav_link-studio {
+        color: #7CDF78;
+      }
+
+      .nav_link-tool {
+        color: #1BE7F3;
+      }
     }
     .home_nav_item_title {
       font-family: "Comfortaa";
@@ -32,6 +41,9 @@
       font-size: 22.9693px;
       color: #242424;
       margin: 0 32px;
+      background: -webkit-linear-gradient(303deg, var(--blue), var(--primeryGreen));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
@@ -52,28 +64,49 @@
 
   .home_content_title {
     font-weight: bold;
-    font-size: 72px;
+    font-size: 52px;
     text-align: center;
     letter-spacing: -0.04em;
     color: #242424;
     margin-top: 20px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 72px;
+    }
   }
 }
 
 //animatie
 .toggle_container {
-  width: 1038px;
-  height: 69vh;
+  max-width: 700px;
+  height: 650px;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 40px auto;
+  flex-flow: column;
+
+  @media only screen and (min-width: 768px) {
+    flex-flow: row;
+    max-width: none;
+    width: 750px;
+    margin: 0 auto;
+    height: 69vh;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    width: 1038px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 1200px;
+	}
 }
 
 .toggle_title {
   color: white;
-  font-size: 70px;
+  font-size: 50px;
   font-family: "Montserrat";
   font-weight: 500;
   width: 100%;
@@ -81,28 +114,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 70px;
+  }
 }
 
 .toggle1 { order: 1; }
 .toggle2 { order: 2; }
 
 
-.toggle2 {
-  width: 708px;
+.toggle1,
+.toggle2 { 
+  width: 370px;
   height: 369px;
-  background:  url(fire.jpg);
   transition: width .4s ease-out, clip-path .4s ease-out;
   position: absolute;
-  right: 0;
-  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 100%, 50% 0);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  @media only screen and (min-width: 768px) {
+    width: 512px;  
+  }
+
+  @media only screen and (min-width: 1100px) {
+    width: 708px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 819px;
+    height: 420px;
+	}
+
   a {
-    background: rgba(145, 250, 141, 1);
     display: inline-block;
     text-decoration: none;
     padding: 12px 60px;
@@ -114,75 +161,113 @@
     margin-top: 10px;
   }
 }
+
+.toggle1 {
+  background-image:  url(water.jpg);
+  clip-path: polygon(50% 0%, 100% 0, 100% 0, 100% 45%, 0 100%, 0% 60%, 0 0);
+  top: 55px;
+
+  @media only screen and (min-width: 768px) {
+    clip-path: polygon(50% 0%, 100% 0, 100% 0, 50% 100%, 0 100%, 0% 60%, 0 0);
+    margin-bottom: 50px;
+    left: 0;
+    top: auto;
+  }
+
+  a {
+    background: rgb(88, 246, 255);
+  }
+}
+
+.toggle2 {
+  background-image:  url(fire.jpg);
+  clip-path: polygon(100% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 100%, 0 55%);
+  bottom: 55px;
+
+  @media only screen and (min-width: 768px) {
+    right: 0;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 100%, 50% 0);
+    bottom: auto;
+  }
+
+  a {
+    background: rgba(145, 250, 141, 1);
+  }
+}
+
+
+
 .toggle1 div,
 .toggle2 div {
-  opacity: 0;
+  opacity: 1;
   transition: opacity .4s ease-out;
   display: flex;
   flex-flow: column;
   align-items: center;
-}
 
-.toggle2:hover {
-  width: 1010px;
-  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 40%, 20% 0);
-  z-index:10;
-
-  div {
-    opacity: 1;
+  @media only screen and (min-width: 768px) {
+    opacity: 0;
   }
 }
 
-.toggle2:hover ~ .toggle1 {
-  width: 490px;
-  clip-path: polygon(50% 0%, 100% 0, 100% 0, 0 100%, 0 100%, 0% 60%, 0 0);
-}
+//hover status
+@media only screen and (min-width: 768px) {
+  .toggle1:hover ~ .toggle2,
+  .toggle2:hover ~ .toggle1,
+  .toggle_hoverclass {
+    width: 350px;
+  }
 
-.toggle1 {
-  width: 708px;
-  height: 369px;
-  background:  url(water.jpg);
-  transition: width .4s ease-out, clip-path .4s ease-out;
-  position: absolute;
-  left: 0;
-  clip-path: polygon(50% 0%, 100% 0, 100% 0, 50% 100%, 0 100%, 0% 60%, 0 0);
-  margin-bottom: 50px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .toggle1:hover ~ .toggle2 {
+    clip-path: polygon(100% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 100%, 100% 0);
+  }
 
-  a {
-    background: rgb(88, 246, 255);
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 60px;
-    font-family: "Inter";
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    color: #242424;
-    margin-top: 10px;
+  .toggle2:hover ~ .toggle1,
+  .toggle_hoverclass {
+    clip-path: polygon(50% 0%, 100% 0, 100% 0, 0 100%, 0 100%, 0% 60%, 0 0);
+  }
+
+  .toggle1:hover,
+  .toggle2:hover {
+    z-index:10;
+    width: 720px;
+
+    div {
+      opacity: 1;
+    }
+  }
+
+  .toggle1:hover {
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 80% 100%, 0 100%, 0% 60%, 0 0);
+  }
+
+  .toggle2:hover {
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 40%, 20% 0);
   }
 }
 
-.toggle1:hover {
-  width: 1010px;
-  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 80% 100%, 0 100%, 0% 60%, 0 0);
-  z-index:10;
+@media only screen and (min-width: 1100px) {
+  .toggle1:hover ~ .toggle2,
+  .toggle2:hover ~ .toggle1,
+  .toggle_hoverclass {
+    width: 490px;
+  }
 
-  div {
-    opacity: 1;
+  .toggle1:hover,
+  .toggle2:hover {
+    width: 1010px;
   }
 }
 
-.toggle1:hover ~ .toggle2 {
-  width: 490px;
-  clip-path: polygon(100% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 100%, 100% 0);
-}
+@media only screen and (min-width: 1440px) {
+  .toggle1:hover ~ .toggle2,
+  .toggle2:hover ~ .toggle1,
+  .toggle_hoverclass {
+    width: 550px;
+  }
 
-.toggle_hoverclass {
-  width: 490px;
-  clip-path: polygon(50% 0%, 100% 0, 100% 0, 0 100%, 0 100%, 0% 60%, 0 0);
+  .toggle1:hover,
+  .toggle2:hover {
+    width: 1175px;
+  }
 }

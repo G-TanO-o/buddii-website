@@ -54,9 +54,9 @@ function Nav({ open, setOpen, tool = true, links }) {
                 </div>
               ) : (
                 <div className="buttons_nav">
-                  <Button text="Demo" to="#" styling="second_black" arrowColor="arrow_none" />
+                  <Button text="Demo" to="/demo" styling="second_black" arrowColor="arrow_none" />
                   <div style={{ marginLeft: 30 }}>
-                    <Button text="Simuleer offerte" to="#" styling="primery" />
+                    <Button text="Simuleer offerte" to="/offerte" styling="primery" />
                   </div>
                 </div>
               )}

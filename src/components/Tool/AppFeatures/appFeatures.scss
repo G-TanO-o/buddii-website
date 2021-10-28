@@ -121,17 +121,10 @@
 }
 
 .items_hover {
-    .item_title {
-        -webkit-text-stroke: 1px black;   
-        -webkit-text-fill-color: transparent;
-    }
-
     .item_title_active {
         font-size: 18px;
         text-transform: capitalize;
         font-weight: bold;
-        -webkit-text-stroke: 0px black;   
-        -webkit-text-fill-color: black;
         position: relative;
         z-index: 3;
         display: inline-block;

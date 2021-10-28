@@ -1,0 +1,99 @@
+.form_container {
+  margin: 0 auto 50px;
+  max-width: 1200px;
+  padding: 0 25px;
+
+  .form_title {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 54px;
+    color: #18191F;
+    margin-bottom: 50px;
+
+    @media only screen and (min-width: 764px) {
+      font-size: 40px;
+    }
+  }
+  .form {
+    display: flex;
+    flex-flow: column;
+
+    .form_label {
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+      color: #18191F; 
+
+      @media only screen and (min-width: 764px) {
+        font-size: 18px;
+      }
+    }
+
+    .form_text {
+      font-family: "Inter";
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+      color: #18191F;
+      margin-top: 30px;
+      margin-bottom: 20px;
+
+      @media only screen and (min-width: 764px) {
+        font-size: 18px;
+      }
+    }
+
+    .form_grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 21px 29px;
+
+      @media only screen and (min-width: 764px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form_input {
+        padding: 12px 24px;
+        width: 85%;
+        background: rgba(196, 196, 196, 0.15);
+        border: none;
+        font-family: "Inter";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(24, 25, 31, 0.5);
+
+        @media only screen and (min-width: 500px) {
+          width: 90%;
+        }
+      }
+
+      .form_textarea {
+        background: rgba(196, 196, 196, 0.15);
+        height: 109px;
+        width: 85%;
+        
+        border: none;
+        padding: 17px 24px 0;
+        margin-bottom: 22px;
+        font-family: "Inter";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(24, 25, 31, 0.5);
+        resize: none;
+
+        @media only screen and (min-width: 500px) {
+          width: 90%;
+        }
+
+        @media only screen and (min-width: 764px) {
+          width: 95%;
+          grid-area: 3/1/4/3;
+        }
+      }
+    }
+  }
+}
