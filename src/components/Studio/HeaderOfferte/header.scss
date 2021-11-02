@@ -1,0 +1,34 @@
+.headerofferte_title_studio {
+	font-size: 52px;
+	margin-bottom: 100px;
+
+	@media only screen and (min-width: 768px) {
+		font-size: 65px;
+	} 
+	@media only screen and (min-width: 1024px) {
+		font-size: 86px;
+	}
+}
+
+.header_stripes_l_studio {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	width: 30vw;
+	bottom: 0;
+}
+
+.header_stripes_r_offerte {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	top: 0;
+}
+
+.offerte_img {
+	z-index: 34;
+}
+
+.headerofferte_image_studio {
+	margin-bottom: 0px;
+}

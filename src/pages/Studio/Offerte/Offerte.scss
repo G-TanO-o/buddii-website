@@ -1,0 +1,68 @@
+.offerte_container {
+  max-width: 1200px;
+  margin: 75px auto;
+
+  .offerte_title {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: #292930;
+  }
+
+  .offerte_subtitle {
+    font-family: "Poppins";
+    font-weight: normal;
+    font-size: 16px;
+    color: #999FAE;
+  }
+
+  .offerte_form {
+    display: flex;
+    flex-flow: column;
+
+    .offerte_form_grid {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px 30px;
+
+      .offerte_form_label {
+        font-family: "Poppins";
+        font-weight: 500;
+        font-size: 14px;
+        color: #292930;
+        display: flex;
+        flex-direction: column;
+
+        .offerte_form_input {
+          background: rgba(228, 228, 228, 0.49776);
+          opacity: 0.5;
+          border-radius: 16px;
+          padding: 16px 24px;
+          border: none;
+          font-family: "Poppins";
+          font-weight: normal;
+          font-size: 16px;
+          color: #292930;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .offerte_form_button {
+      width: 520px;
+      align-self: center;
+      margin-top: 50px;
+      background: #19CFD9;
+      border-radius: 16px;
+      border: none;
+      padding: 21px;
+      font-family: "Inter";
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }  
+}

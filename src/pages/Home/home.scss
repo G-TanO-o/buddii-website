@@ -105,7 +105,7 @@
 }
 
 .toggle_title {
-  color: white;
+  color: black;
   font-size: 50px;
   font-family: "Montserrat";
   font-weight: 500;
@@ -163,9 +163,18 @@
 }
 
 .toggle1 {
-  background-image:  url(water.jpg);
+  background-image:  url(tool-bg.png);
   clip-path: polygon(50% 0%, 100% 0, 100% 0, 100% 45%, 0 100%, 0% 60%, 0 0);
   top: 55px;
+
+  &::before{
+    background-color: rgba(27, 231, 243, 0.1);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
 
   @media only screen and (min-width: 768px) {
     clip-path: polygon(50% 0%, 100% 0, 100% 0, 50% 100%, 0 100%, 0% 60%, 0 0);
@@ -180,9 +189,18 @@
 }
 
 .toggle2 {
-  background-image:  url(fire.jpg);
+  background-image:  url(studio-bg.png);
   clip-path: polygon(100% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 100%, 0 55%);
   bottom: 55px;
+
+  &::before{
+    background-color: rgba(124, 223, 120, 0.1);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
 
   @media only screen and (min-width: 768px) {
     right: 0;
@@ -204,6 +222,7 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  z-index: 2;
 
   @media only screen and (min-width: 768px) {
     opacity: 0;

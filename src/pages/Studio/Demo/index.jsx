@@ -1,5 +1,7 @@
 import React from "react";
 
+import './Demo.scss';
+
 function Demo() {
 
   return (

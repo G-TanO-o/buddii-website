@@ -1,0 +1,89 @@
+.contact_title {
+  font-size: 52px;
+  font-family: "Inter";
+  font-weight: bold;
+  text-align: center;
+  color: #242424;
+  margin: 90px 0;
+
+  @media only screen and (min-width: 768px) {
+		font-size: 65px;
+	} 
+	@media only screen and (min-width: 1024px) {
+		font-size: 86px;
+	}
+}
+
+.lines_right_contact {
+  position: absolute;
+  right: 0;
+}
+
+.contact_container {
+  padding: 225px 0 0px;
+  display: flex;
+  margin: 0 auto;
+  width: 1076px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .contact_info_gegevens,
+  .contact_info_producties {
+    margin-bottom: 35px;
+
+    .contact_info_title {
+      font-family: "Inter";
+      font-weight: bold;
+      font-size: 36px;
+      color: #000000;
+      margin-bottom: 25px;
+    }
+
+    .contact_info_text {
+      font-family: Inter;
+    	font-weight: normal;
+    	font-size: 16px;
+    	color: #18191F;
+		  margin-bottom: 15px;
+    }
+  }
+}
+
+.contact_form {
+  display: flex;
+  flex-flow: column;
+  width: 685px;
+
+  .contact_form_input,
+  .contact_form_textarea {
+    width: 685px;
+    z-index: 2;
+    position: relative;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #292930;
+    padding: 26.5px 24px;
+    border-radius: 16px;
+    border: none;
+    background: #F8F8F8;
+    margin-bottom: 22px;
+  }
+
+  .contact_form_textarea {
+    height: 178px;
+    resize: none;
+  }
+
+  .contact_form_submit {
+    background: #19CFD9;
+    border-radius: 16px;
+    width: 200px;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    padding: 22px 60px;
+  }
+}

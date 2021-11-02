@@ -47,10 +47,13 @@
 
 .no_scroll {
   display: none;
-
 }
 
 .able_scroll {
   display: block;
+}
 
+.leaflet-container {
+  width: 100vw;
+  height: 300px;
 }
