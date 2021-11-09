@@ -1,0 +1,40 @@
+.notFound {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .notFound_404 {
+    font-size: 100px;
+    font-family: "Inter";
+    font-weight: 700;
+    margin-top: 35px;
+
+    @media only screen and (min-width: 769px) {
+      font-size: 230px;
+      margin-top: 0px;
+    } 
+  }
+
+  .notFound_title {
+    font-size: 30px;
+    margin: 25px 0;
+    font-family: "Inter";
+    font-weight: 600;
+
+    @media only screen and (min-width: 769px) {
+      font-size: 50px;
+    } 
+  }
+
+  .notFound_text {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

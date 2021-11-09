@@ -1,3 +1,7 @@
+.offerte_header {
+	padding: 20px 0;
+}
+
 .headerofferte_title_studio {
 	font-size: 52px;
 	margin-bottom: 100px;
@@ -23,12 +27,26 @@
 	z-index: 1;
 	right: 0;
 	top: 0;
+	width: 35vw;
 }
 
 .offerte_img {
 	z-index: 34;
+	position: relative;
+	right: -50px;
+	width: 660px;
+
+	@media only screen and (min-width: 768px) {
+		position: static;
+		width: 800px;
+	} 
+
+	@media only screen and (min-width: 1024px) {
+		width: auto;
+	}
 }
 
 .headerofferte_image_studio {
 	margin-bottom: 0px;
+	overflow: hidden;
 }

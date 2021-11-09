@@ -1,0 +1,113 @@
+.blogpost_header {
+  max-width: 1200px;
+  margin: 80px auto 44px;
+  padding: 0 25px;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 0 0px;
+  } 
+
+  .blogpost_header_title {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 98px;
+    text-align: center;
+    color: #242424;
+    margin-bottom: 78px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 70px;
+		} 
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 96px;
+		} 
+  }
+
+  .blogpost_title {
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 30px;
+    color: #292930;
+    margin-bottom: 42px;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 40px;
+		} 
+  }
+
+  .blogpost_img {
+    object-fit: cover;
+    object-position: 0px 25%;
+    width: 100%;
+  }
+
+  .blogpost_info {
+    display: flex;
+    align-items: center;
+
+    .blogpost_info_date {
+      font-family: Avenir;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 19px;
+      color: #383838;
+      margin-right: 25px;
+    }
+
+    .blogpost_info_read {
+      display: flex;
+      align-items:center;
+
+      .blogpost_info_read_text {
+        font-family: Avenir;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #000000;margin-left: 3px;
+      }
+    }
+  }
+}
+
+.blogpost_content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 0 25px;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 0 0px;
+  } 
+
+  .bp_content_intro {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 35px;
+    color: #000000;
+    max-width: 900px;
+    margin-bottom: 50px;
+  }
+
+  .bp_content_title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  .bp_content_text {
+    font-family: "Inter";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 38px;
+    max-width: 950px;
+  }
+}

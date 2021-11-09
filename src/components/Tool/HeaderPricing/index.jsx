@@ -25,7 +25,7 @@ function HeaderPricing() {
 
         <div className="header_intro">
           <div className="pricing_header">
-            <h1 className="pricing_title">Simple, straightforward pricing.</h1>
+            <h1 className="header_title">Simple, straightforward pricing.</h1>
             <p className="pricing_text">Choose the plan that's right for your brand. Whether you're just getting started with email marketing or you're personalizing every campaign, there's a plan for you.</p>
             <p className="pricing_value">With your list of <span className="pricing_valuetext">{test}</span> contacts, wee've got the right plan for you.</p>
             <div className="pricing_sliderdiv">

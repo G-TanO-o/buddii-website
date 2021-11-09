@@ -1,0 +1,130 @@
+.c-calendar {
+  background: #fff;
+  box-shadow: 2px 28px 54px rgba(171, 171, 180, 0.180944);
+  border-radius: 16px;
+  grid-area: 1 /1 / 3 / 2;
+  padding: 20px;
+
+  .c-cal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .c-cal-title {
+      font-family: "Poppins", "sans-serif";
+      font-weight: bold;
+      font-size: 22px;
+      width: 125px;
+
+      @media only screen and (min-width: 550px) {
+        margin-top: 10px;
+      } 
+    }
+
+    .c-cal-monthyear {
+      display: flex; 
+      align-items: center;
+
+      .c-cal-selected-month {
+        font-family: "Poppins", "sans-serif";
+        font-weight: bold;
+        font-size: 20px;
+        color: #222222;
+        margin: 0 5px;
+
+        @media only screen and (min-width: 550px) {
+          font-size: 38px;
+        } 
+      }
+
+      .c-cal-left, .c-cal-right {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .c-calendar-full {
+    display: flex;
+    flex-flow: column;
+
+    .c-calender-weekdays {
+      margin-top: 25px
+    }
+
+    .c-calendar-week {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      margin-bottom: 25px;
+
+      .c-calendar-day, .c-calendar-weekday, .c-calender-day-othermonth {
+        margin: 14px 10px;
+        text-align: center;
+        font-family: "Inter", "sans-serif";
+        font-weight: 700;
+        font-size: 13px;
+
+        @media only screen and (min-width: 550px) {
+          margin: 14px 20px;
+        } 
+      }
+
+      .c-calendar-day-selected {
+        text-align: center;
+        font-family: "Inter", "sans-serif";
+        font-weight: 700;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+
+        .c-calender-selected {
+          background-color: #19cfd9;
+          color: #fff;
+          border-radius: 30px;
+          width: 32px;
+          align-self: center;
+          justify-self: center;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Inter", "sans-serif";
+          font-weight: 700;
+          font-size: 13px;
+          cursor: pointer;
+        }
+      }
+
+      .c-calendar-day {
+        color: #040415;
+        cursor: pointer;
+      }
+
+      .c-calender-day-othermonth {
+        color: #808191;
+        cursor: pointer;
+      }
+
+      .c-calendar-weekday {
+        color: #808191;
+      }
+
+      .c-calender-today {
+        background-color: #7CDF78;
+        color: #fff;
+        border-radius: 30px;
+        width: 32px;
+        align-self: center;
+        justify-self: center;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Inter", "sans-serif";
+        font-weight: 700;
+        font-size: 13px;
+      }
+    }
+  }
+}

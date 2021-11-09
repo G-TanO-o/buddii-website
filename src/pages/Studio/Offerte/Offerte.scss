@@ -1,13 +1,28 @@
 .offerte_container {
   max-width: 1200px;
-  margin: 75px auto;
+  margin: 35px auto;
+  background: #FFFFFF;
+  box-shadow: 10px 12px 75px rgba(231, 231, 231, 0.3);
+  border-radius: 30px;
+  padding: 35px 20px;
+
+  @media only screen and (min-width: 550px) {
+    margin: 75px auto;
+    padding: 35px 50px;
+  } 
 
   .offerte_title {
     font-family: "Inter";
     font-weight: 800;
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     color: #292930;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 769px) {
+      margin-bottom: 0;
+      font-size: 40px;
+    } 
   }
 
   .offerte_subtitle {
@@ -24,8 +39,12 @@
     .offerte_form_grid {
       margin-top: 30px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 24px 30px;
+
+      @media only screen and (min-width: 880px) {
+        grid-template-columns: repeat(2, 1fr);
+      } 
 
       .offerte_form_label {
         font-family: "Poppins";
@@ -34,10 +53,22 @@
         color: #292930;
         display: flex;
         flex-direction: column;
+        position: relative;
+        width: 90vw;
+
+        @media only screen and (min-width: 430px) {
+          width: auto;
+        } 
+
+        img {
+          position: absolute;
+          bottom: 16px;
+          left: 24px;
+          z-index: 9;
+        }
 
         .offerte_form_input {
           background: rgba(228, 228, 228, 0.49776);
-          opacity: 0.5;
           border-radius: 16px;
           padding: 16px 24px;
           border: none;
@@ -47,11 +78,16 @@
           color: #292930;
           margin-top: 10px;
         }
+
+        .offerte_input-icon {
+          position: relative;
+          padding-left: 55px;
+        }
       }
     }
 
     .offerte_form_button {
-      width: 520px;
+      width: 100%;
       align-self: center;
       margin-top: 50px;
       background: #19CFD9;
@@ -63,6 +99,10 @@
       font-size: 16px;
       text-align: center;
       color: #FFFFFF;
+
+      @media only screen and (min-width: 550px) {
+        width: 520px;
+      } 
     }
   }  
 }

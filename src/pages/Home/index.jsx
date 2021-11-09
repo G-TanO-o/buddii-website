@@ -33,20 +33,20 @@ function Home() {
           </NavLink>
         </li>
         <li className="home_nav_item">
-          <NavLink className="nav_link nav_link-studio" to="/cases" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+          <NavLink className="nav_link nav_link-studio" to="/cases/1" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
             Cases
           </NavLink>
         </li>
         <li className="home_nav_item">
-          <NavLink className="nav_link nav_link-studio" to="/solutions" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
+          <NavLink className="nav_link nav_link-studio" to="/solutions/1" exact activeStyle={{ color: '#19CFD9', borderBottom: "2px solid" }}>
             Solutions
           </NavLink>
         </li>
       </ul>
 
       <section className="home_content">
-        <p className="home_content_text">Kies de service die je nodig hebt van Buddii.</p>
-        <h1 className="home_content_title">Kies je destinatie</h1>
+        <p className="home_content_text">Kies de Buddii service die bij u past.</p>
+
 
         <div className="toggle_container">
           <div className={hover ? "toggle1 toggle_hoverclass" : "toggle1"}>

@@ -17,15 +17,42 @@
 .lines_right_contact {
   position: absolute;
   right: 0;
+  width: 90%;
+
+  @media only screen and (min-width: 550px) {
+		width: 75%;
+	} 
+
+  @media only screen and (min-width: 769px) {
+		width: auto;
+	} 
+
+//550 75%
+
+//769 auto
+}
+
+.lines_left_contact {
+  width: 90%;
+  @media only screen and (min-width: 550px) {
+		width: auto;
+	} 
+  //550 auto
 }
 
 .contact_container {
-  padding: 225px 0 0px;
+  padding: 200px 20px 50px;
   display: flex;
   margin: 0 auto;
-  width: 1076px;
+  max-width: 1200px;
   justify-content: space-between;
   align-items: flex-start;
+  flex-flow: column;
+
+  @media only screen and (min-width: 768px) {
+		flex-flow: row;
+    padding: 225px 20px 50px;
+	} 
 
   .contact_info_gegevens,
   .contact_info_producties {
@@ -40,7 +67,7 @@
     }
 
     .contact_info_text {
-      font-family: Inter;
+      font-family: "Inter";
     	font-weight: normal;
     	font-size: 16px;
     	color: #18191F;
@@ -52,11 +79,15 @@
 .contact_form {
   display: flex;
   flex-flow: column;
-  width: 685px;
+  max-width: 800px;
+	@media only screen and (min-width: 1024px) {
+		width: 800px;
+	}
+ 
 
   .contact_form_input,
   .contact_form_textarea {
-    width: 685px;
+    width: 85%;
     z-index: 2;
     position: relative;
     font-family: "Poppins";
@@ -67,6 +98,10 @@
     border: none;
     background: #F8F8F8;
     margin-bottom: 22px;
+
+    @media only screen and (min-width: 1024px) {
+      width: 90%;
+    }
   }
 
   .contact_form_textarea {

@@ -114,6 +114,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: -webkit-linear-gradient(303deg, var(--blue), var(--primeryGreen));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
   @media only screen and (min-width: 768px) {
     font-size: 70px;
@@ -168,7 +171,6 @@
   top: 55px;
 
   &::before{
-    background-color: rgba(27, 231, 243, 0.1);
     content: '';
     display: block;
     height: 100%;
@@ -194,7 +196,6 @@
   bottom: 55px;
 
   &::before{
-    background-color: rgba(124, 223, 120, 0.1);
     content: '';
     display: block;
     height: 100%;
@@ -223,6 +224,11 @@
   flex-flow: column;
   align-items: center;
   z-index: 2;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.32); 
+  box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.32);
 
   @media only screen and (min-width: 768px) {
     opacity: 0;

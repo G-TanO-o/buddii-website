@@ -22,6 +22,8 @@ import Blog from "./pages/Studio/Blog";
 import Contact from './pages/Studio/Contact';
 import Offerte from './pages/Studio/Offerte';
 import Demo from './pages/Studio/Demo';
+import BlogPost from './pages/Studio/BlogPost';
+import Congrats from './pages/Studio/Congrats'
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -34,8 +36,8 @@ function App() {
 
   const navstudio= [
     {name: "Studio", to: "/studio"},
-    {name: "Cases", to: "/cases"},
-    {name: "Solutions", to: "/solutions"},
+    {name: "Cases", to: "/cases/1"},
+    {name: "Solutions", to: "/solutions/1"},
     {name: "Blog", to: "/blog"},
     {name: "Contact", to: "/contact"},
   ]
@@ -71,13 +73,13 @@ function App() {
             <Footer />
           </Route>
 
-          <Route path="/cases">
+          <Route path="/cases/:id">
             <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
             <Cases/>
             <Footer />
           </Route>
 
-          <Route path="/solutions">
+          <Route path="/solutions/:id">
             <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
             <Solutions/>
             <Footer />
@@ -86,6 +88,12 @@ function App() {
           <Route path="/blog">
             <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
             <Blog/>
+            <Footer />
+          </Route>
+
+          <Route path="/blogpost/:id">
+            <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
+            <BlogPost/>
             <Footer />
           </Route>
 
@@ -104,6 +112,12 @@ function App() {
           <Route path="/demo">
             <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
             <Demo/>
+            <Footer />
+          </Route>
+
+          <Route path="/congrats">
+            <Nav open={open} setOpen={e => setOpen(e)} tool={false} links={navstudio}/>
+            <Congrats/>
             <Footer />
           </Route>
         </>

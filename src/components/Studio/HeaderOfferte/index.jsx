@@ -11,8 +11,7 @@ function HeaderOfferte() {
 
   return (
     <>
-      <section className="header">
-
+      <section className="header offerte_header">
         <div className="background_blur">
           <div className="blur_top"></div>
           <div className="blur_bot"></div>

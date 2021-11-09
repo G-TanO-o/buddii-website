@@ -1,0 +1,101 @@
+.case_text_content {
+  margin: 70px auto;
+  max-width: 1200px;
+  padding: 65px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .case_text_box {
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .case_text_box_title {
+      font-family: "Inter";
+      font-weight: 800;
+      font-size: 40px;
+      color: #18191F;
+      margin-bottom: 25px;
+    }
+
+    .case_text_box_text {
+      font-family: Inter;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 30px;
+      color: #18191F;
+      max-width: 444px;
+      margin-bottom: 45px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.case_cases {
+  margin: 80px auto;
+  max-width: 1200px;
+  padding: 0 25px;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 0 0px;
+  } 
+
+  .case_cases_title {
+    font-family: "Poppins";
+    font-style: italic;
+    font-size: 36px;
+    color: #18191F;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media only screen and (min-width: 750px) {
+      text-align: start;
+    } 
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+
+    @media only screen and (min-width: 750px) {
+      justify-content: space-between;
+      align-items: flex-start;
+     flex-flow: row wrap;
+    } 
+
+    a {
+      text-decoration: none;
+      max-width: 350px;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+
+      h2 {
+        font-family: "Poppins";
+        font-size: 24px;
+        color: #18191F;
+        margin: 16px 0 8px;
+      }
+
+      p {
+        font-family: "ABeeZee";
+        font-style: italic;
+        font-size: 16px;
+        color: #18191F;
+      }
+    }
+  }
+}

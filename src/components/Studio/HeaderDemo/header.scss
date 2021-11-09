@@ -1,0 +1,24 @@
+.demo_header_title {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+  margin-top: 24px;
+}
+
+.headerdemo_image_studio {
+  margin-bottom: 45px;
+
+  .demo_calender {
+    z-index: 8;
+    width: 100%;
+
+    @media only screen and (min-width: 550px) {
+      width: auto;
+    } 
+  }
+}
+
+.demo_header_strips_r {
+  width: 35vw;
+}

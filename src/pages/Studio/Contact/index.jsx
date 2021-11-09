@@ -1,6 +1,5 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import Button from '../../../components/Button';
 import stripeLeft from "../../../assets/images/strokes-links.svg"
 import stripeRechts from "../../../assets/images/strokes-rechts.svg"
 
@@ -31,17 +30,16 @@ function Contact() {
         <div className="contact_container">
           <div className="contact_info">
             <div className="contact_info_gegevens">
-              <h2 className="contact_info_title">Contact gegevens</h2>
+              <h2 className="contact_info_title">Adres</h2>
               <p className="contact_info_text">August Michiels Straat 10</p>
-              <p className="contact_info_text">2000 Anntwerpen, België</p>
+              <p className="contact_info_text">2000 Antwerpen, België</p>
             </div>
 
             <div className="contact_info_producties">
-              <h2 className="contact_info_title">Producties</h2>
-              <p className="contact_info_text">Buddii@info.be</p>
-              <p className="contact_info_text">tel: 04829344712</p>
-              <p className="contact_info_text">fax: 0465432433</p>
-              <p className="contact_info_text">BTW-nr: 435354535234</p>
+              <h2 className="contact_info_title">Gegevens</h2>
+              <p className="contact_info_text">info@Buddii.be</p>
+              <p className="contact_info_text">tel: 0498 38 30 92</p>
+              <p className="contact_info_text">BTW-nr: 0756.938.015:</p>
             </div>
           </div>
 
@@ -59,7 +57,7 @@ function Contact() {
             <input className="contact_form_submit" type="submit" value="Send email" />
           </form>
         </div>
-        <img src={stripeLeft} alt="deco-strokes" />
+        <img className="lines_left_contact" src={stripeLeft} alt="deco-strokes" />
       </div>
     </article>
   );
